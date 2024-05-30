@@ -177,6 +177,12 @@ static MMLayershots *_sharedInstance;
     allWindows = [allWindows filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"screen == %@ AND self != %@", screen, self.hudWindow]];
 
     for (UIWindow *window in allWindows) {
+        if ([self.delegate respondsToSelector:@selector(shouldCreateLayershotForWindow:)]) {
+            if (![self.delegate shouldCreateLayershotForWindow:window]) {
+                continue;
+            }
+        }
+
         [window.layer beginHidingSublayers];
         [psdWriter addImagesForLayer:window.layer renderedToRootLayer:window.layer];
         [window.layer endHidingSublayers];

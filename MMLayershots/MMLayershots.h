@@ -81,4 +81,8 @@ typedef NS_ENUM(NSUInteger, MMLayershotsCreatePolicy) {
  */
 - (void)didCreateLayershotForScreen:(UIScreen *)screen data:(NSData *)data;
 
+// Asks the delegate whether a layershot should be generated for a window.
+// This method is called for each window in the application.
+- (BOOL)shouldCreateLayershotForWindow:(UIWindow *)window;
+
 @end
