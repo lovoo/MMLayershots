@@ -96,7 +96,9 @@
 - (NSData *)visibleImageData
 {
     if (_visibleImageData == nil) {
-        _visibleImageData = CGImageGetData([self croppedImage], [self imageCropRegion]);
+        CGImageRef croppedImage = [self croppedImage];
+        _visibleImageData = CGImageGetData(croppedImage, [self imageCropRegion]);
+        CGImageRelease(croppedImage);
     }
     return _visibleImageData;
 }

@@ -296,9 +296,11 @@
     CGRect drawRegion = [layer imageInDocumentRegion];
     drawRegion.origin.y = self.documentSize.height - (drawRegion.origin.y + drawRegion.size.height);
 
+    CGImageRef croppedImage = [layer croppedImage];
     CGContextSetAlpha(self.flattenedContext, [layer opacity]);
-    CGContextDrawImage(self.flattenedContext, drawRegion, [layer croppedImage]);
+    CGContextDrawImage(self.flattenedContext, drawRegion, croppedImage);
     CGContextSetAlpha(self.flattenedContext, [layer opacity]);
+    CGImageRelease(croppedImage);
     
     return YES;
 }
