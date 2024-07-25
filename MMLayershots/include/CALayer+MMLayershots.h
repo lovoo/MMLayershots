@@ -7,7 +7,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CALayer (MMLayershots)
 

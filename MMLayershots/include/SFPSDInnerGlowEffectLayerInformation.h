@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Shiny Frog. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "SFPSDLayerBlendModes.h"
 
 typedef enum {

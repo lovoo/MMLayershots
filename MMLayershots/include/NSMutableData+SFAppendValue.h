@@ -8,8 +8,7 @@
 //  Inspired by PSDWriter by Ben Gotow ( https://github.com/bengotow/PSDWriter )
 //
 
-#import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 @interface NSMutableData (SFAppendValue)
 
