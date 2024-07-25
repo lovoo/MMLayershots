@@ -7,6 +7,7 @@
 //
 
 #import "SFPSDWriter.h"
+#import <Foundation/Foundation.h>
 
 @interface SFPSDWriter (MMLayershots)
 
