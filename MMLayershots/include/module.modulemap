@@ -1,4 +1,4 @@
-module LVModalQueue {
+module MMLayershots {
     header "CALayer+MMLayershots.h"
     header "MMLayershots.h"
     header "SFPSDWriter+MMLayershots.h"
