@@ -1,0 +1,9 @@
+module MMLayershots {
+    header "CALayer+MMLayershots.h"
+    header "MMLayershots.h"
+    header "SFPSDWriter+MMLayershots.h"
+    header "UIScreen+MMLayershots.h"
+    header "UIWindow+SimulatorKeyHandler.h"
+
+    export *
+}

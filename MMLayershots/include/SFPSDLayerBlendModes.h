@@ -8,6 +8,8 @@
 //  Inspired by PSDWriter by Ben Gotow ( https://github.com/bengotow/PSDWriter )
 //
 
+#import <Foundation/Foundation.h>
+
 extern NSString* const SFPSDLayerBlendModeNormal;
 extern NSString* const SFPSDLayerBlendModeDarken;
 extern NSString* const SFPSDLayerBlendModeLighten;

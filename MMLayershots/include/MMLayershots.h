@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Mocava Mobile. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol MMLayershotsDelegate;
 

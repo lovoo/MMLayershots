@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Mocava Mobile. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #import "SFPSDWriter.h"
 
 @interface SFPSDWriter (MMLayershots)

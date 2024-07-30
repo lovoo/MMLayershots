@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Shiny Frog. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "SFPSDDropShadowEffectLayerInformation.h"
 #import "SFPSDInnerShadowEffectLayerInformation.h"
 #import "SFPSDOuterGlowEffectLayerInformation.h"
